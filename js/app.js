@@ -5,6 +5,7 @@ const express = require('express'),
     router = express.Router();
 
 
+app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended : false }));
 app.use(bodyParser.json());
 
