@@ -2,41 +2,35 @@ const child_process = require('child_process');
 
 exports.command = function(command) {
     switch (command) {
-        case 'dstv on':
+        case 'dstv on/off':
             publishToTopic(0);
             break;
-        case 'dstv off':
+        case 'vol up':
             publishToTopic(1);
             break;
-        case 'vol up':
+        case 'vol down':
             publishToTopic(2);
             break;
-        case 'vol down':
+        case 'chan up':
             publishToTopic(3);
             break;
-        case 'chan up':
+        case 'chan down':
             publishToTopic(4);
             break;
-        case 'chan down':
+        case 'ok':
             publishToTopic(5);
             break;
-        case 'lights on':
+        case 'exit':
             publishToTopic(6);
             break;
-        case 'lights off':
+        case 'info':
             publishToTopic(7);
             break;
-        case 'info':
+        case 'left':
             publishToTopic(8);
             break;
-        case 'left':
-            publishToTopic(9);
-            break;
         case 'right':
-            publishToTopic(10);
-            break;
-        case 'exit':
-            publishToTopic(11);
+            publishToTopic(9);
             break;
     }
 };
