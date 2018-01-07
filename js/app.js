@@ -1,8 +1,8 @@
-const express = require('express'),
-    bodyParser = require('body-parser'),
-    commander = require('./commander'),
-    app = express(),
-    router = express.Router();
+const express    = require('express'),
+      bodyParser = require('body-parser'),
+      commander  = require('./commander'),
+      app        = express(),
+      router     = express.Router();
 
 
 app.use(express.static('public'));
