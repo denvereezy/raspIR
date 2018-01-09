@@ -32,6 +32,12 @@ exports.command = function(command) {
         case 'right':
             publishToTopic(9);
             break;
+        case 'up':
+            publishToTopic(10);
+            break;
+        case 'down':
+            publishToTopic(11);
+            break;
     }
 };
 
